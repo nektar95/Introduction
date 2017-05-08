@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		285490B61EC09CF9002790D1 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285490B41EC09CF9002790D1 /* ProfileTableViewCell.swift */; };
+		285490B71EC09CF9002790D1 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285490B51EC09CF9002790D1 /* ProfileTableViewCell.xib */; };
+		285490BD1EC0C2BD002790D1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285490BC1EC0C2BD002790D1 /* TableViewController.swift */; };
+		285490BF1EC0C3B0002790D1 /* list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 285490BE1EC0C3B0002790D1 /* list.plist */; };
 		286A45DC1EBF1A5F00DB2039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286A45DB1EBF1A5F00DB2039 /* AppDelegate.swift */; };
 		286A45DE1EBF1A5F00DB2039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286A45DD1EBF1A5F00DB2039 /* ViewController.swift */; };
 		286A45E11EBF1A5F00DB2039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286A45DF1EBF1A5F00DB2039 /* Main.storyboard */; };
@@ -41,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		1CDE0581B239D9DF5D029D0F /* Pods_Introduction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Introduction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		285490B41EC09CF9002790D1 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		285490B51EC09CF9002790D1 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		285490BC1EC0C2BD002790D1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		285490BE1EC0C3B0002790D1 /* list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = list.plist; sourceTree = "<group>"; };
 		286A45D81EBF1A5F00DB2039 /* Introduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Introduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286A45DB1EBF1A5F00DB2039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286A45DD1EBF1A5F00DB2039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,12 +131,16 @@
 				286A45DB1EBF1A5F00DB2039 /* AppDelegate.swift */,
 				286A45DD1EBF1A5F00DB2039 /* ViewController.swift */,
 				286A45DF1EBF1A5F00DB2039 /* Main.storyboard */,
+				285490B41EC09CF9002790D1 /* ProfileTableViewCell.swift */,
+				285490B51EC09CF9002790D1 /* ProfileTableViewCell.xib */,
 				286A45E21EBF1A5F00DB2039 /* Assets.xcassets */,
 				286A45E41EBF1A5F00DB2039 /* LaunchScreen.storyboard */,
 				286A45E71EBF1A5F00DB2039 /* Info.plist */,
 				286A460B1EBF364600DB2039 /* WalkthroughPageViewController.swift */,
 				286A46091EBF2F9C00DB2039 /* WalkthroughContentViewController.swift */,
 				286A460D1EBF36FA00DB2039 /* WalkthroughPage.swift */,
+				285490BC1EC0C2BD002790D1 /* TableViewController.swift */,
+				285490BE1EC0C3B0002790D1 /* list.plist */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
@@ -290,7 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285490BF1EC0C3B0002790D1 /* list.plist in Resources */,
 				286A45E61EBF1A5F00DB2039 /* LaunchScreen.storyboard in Resources */,
+				285490B71EC09CF9002790D1 /* ProfileTableViewCell.xib in Resources */,
 				286A45E31EBF1A5F00DB2039 /* Assets.xcassets in Resources */,
 				286A45E11EBF1A5F00DB2039 /* Main.storyboard in Resources */,
 			);
@@ -456,8 +470,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				286A460A1EBF2F9C00DB2039 /* WalkthroughContentViewController.swift in Sources */,
+				285490BD1EC0C2BD002790D1 /* TableViewController.swift in Sources */,
 				286A45DE1EBF1A5F00DB2039 /* ViewController.swift in Sources */,
 				286A460C1EBF364600DB2039 /* WalkthroughPageViewController.swift in Sources */,
+				285490B61EC09CF9002790D1 /* ProfileTableViewCell.swift in Sources */,
 				286A460E1EBF36FA00DB2039 /* WalkthroughPage.swift in Sources */,
 				286A45DC1EBF1A5F00DB2039 /* AppDelegate.swift in Sources */,
 			);
