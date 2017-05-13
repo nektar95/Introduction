@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280CE7861EC72EC1009E2FC1 /* LifestyleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CE7851EC72EC1009E2FC1 /* LifestyleTableViewController.swift */; };
+		280CE7881EC7309A009E2FC1 /* LifestyleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CE7871EC7309A009E2FC1 /* LifestyleTableViewCell.swift */; };
+		280CE78A1EC73160009E2FC1 /* LifestyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CE7891EC73160009E2FC1 /* LifestyleModel.swift */; };
 		285490B61EC09CF9002790D1 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285490B41EC09CF9002790D1 /* ProfileTableViewCell.swift */; };
 		285490B71EC09CF9002790D1 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285490B51EC09CF9002790D1 /* ProfileTableViewCell.xib */; };
 		285490BD1EC0C2BD002790D1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285490BC1EC0C2BD002790D1 /* TableViewController.swift */; };
@@ -45,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		1CDE0581B239D9DF5D029D0F /* Pods_Introduction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Introduction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		280CE7851EC72EC1009E2FC1 /* LifestyleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleTableViewController.swift; sourceTree = "<group>"; };
+		280CE7871EC7309A009E2FC1 /* LifestyleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleTableViewCell.swift; sourceTree = "<group>"; };
+		280CE7891EC73160009E2FC1 /* LifestyleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleModel.swift; sourceTree = "<group>"; };
 		285490B41EC09CF9002790D1 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		285490B51EC09CF9002790D1 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		285490BC1EC0C2BD002790D1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +109,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280CE78B1EC76FB9009E2FC1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				285490BC1EC0C2BD002790D1 /* TableViewController.swift */,
+				285490B41EC09CF9002790D1 /* ProfileTableViewCell.swift */,
+				285490B51EC09CF9002790D1 /* ProfileTableViewCell.xib */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		280CE78C1EC76FD0009E2FC1 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				286A460B1EBF364600DB2039 /* WalkthroughPageViewController.swift */,
+				286A46091EBF2F9C00DB2039 /* WalkthroughContentViewController.swift */,
+				286A460D1EBF36FA00DB2039 /* WalkthroughPage.swift */,
+			);
+			name = Walkthrough;
+			sourceTree = "<group>";
+		};
+		28532DD11EC728C8003D6320 /* LifeStyle */ = {
+			isa = PBXGroup;
+			children = (
+				280CE7851EC72EC1009E2FC1 /* LifestyleTableViewController.swift */,
+				280CE7871EC7309A009E2FC1 /* LifestyleTableViewCell.swift */,
+				280CE7891EC73160009E2FC1 /* LifestyleModel.swift */,
+			);
+			name = LifeStyle;
+			sourceTree = "<group>";
+		};
 		286A45CF1EBF1A5F00DB2039 = {
 			isa = PBXGroup;
 			children = (
@@ -128,18 +164,15 @@
 		286A45DA1EBF1A5F00DB2039 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
+				280CE78C1EC76FD0009E2FC1 /* Walkthrough */,
+				280CE78B1EC76FB9009E2FC1 /* Profile */,
+				28532DD11EC728C8003D6320 /* LifeStyle */,
 				286A45DB1EBF1A5F00DB2039 /* AppDelegate.swift */,
 				286A45DD1EBF1A5F00DB2039 /* ViewController.swift */,
 				286A45DF1EBF1A5F00DB2039 /* Main.storyboard */,
-				285490B41EC09CF9002790D1 /* ProfileTableViewCell.swift */,
-				285490B51EC09CF9002790D1 /* ProfileTableViewCell.xib */,
 				286A45E21EBF1A5F00DB2039 /* Assets.xcassets */,
 				286A45E41EBF1A5F00DB2039 /* LaunchScreen.storyboard */,
 				286A45E71EBF1A5F00DB2039 /* Info.plist */,
-				286A460B1EBF364600DB2039 /* WalkthroughPageViewController.swift */,
-				286A46091EBF2F9C00DB2039 /* WalkthroughContentViewController.swift */,
-				286A460D1EBF36FA00DB2039 /* WalkthroughPage.swift */,
-				285490BC1EC0C2BD002790D1 /* TableViewController.swift */,
 				285490BE1EC0C3B0002790D1 /* list.plist */,
 			);
 			path = Introduction;
@@ -470,10 +503,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				286A460A1EBF2F9C00DB2039 /* WalkthroughContentViewController.swift in Sources */,
+				280CE7861EC72EC1009E2FC1 /* LifestyleTableViewController.swift in Sources */,
+				280CE7881EC7309A009E2FC1 /* LifestyleTableViewCell.swift in Sources */,
 				285490BD1EC0C2BD002790D1 /* TableViewController.swift in Sources */,
 				286A45DE1EBF1A5F00DB2039 /* ViewController.swift in Sources */,
 				286A460C1EBF364600DB2039 /* WalkthroughPageViewController.swift in Sources */,
 				285490B61EC09CF9002790D1 /* ProfileTableViewCell.swift in Sources */,
+				280CE78A1EC73160009E2FC1 /* LifestyleModel.swift in Sources */,
 				286A460E1EBF36FA00DB2039 /* WalkthroughPage.swift in Sources */,
 				286A45DC1EBF1A5F00DB2039 /* AppDelegate.swift in Sources */,
 			);

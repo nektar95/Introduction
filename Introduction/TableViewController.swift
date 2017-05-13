@@ -49,10 +49,10 @@ extension TableViewController:UITableViewDataSource,UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath) as! ProfileTableViewCell
 
         if isExpanded{
-            cell.expandLabel.text = "Rozwin"
+            cell.expandLabel.text = "Expand"
             
         } else {
-            cell.expandLabel.text = "Zwin"
+            cell.expandLabel.text = "Hide"
         }
         self.didExpandCell()
     }
