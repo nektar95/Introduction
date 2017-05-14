@@ -13,8 +13,10 @@ class LifestyleTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    let model = generateRandomData()
+    let model = loadLifestyleData()
     var storedOffsets = [Int: CGFloat]()
+    var tag = 0
+    var index = 0
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.count
@@ -23,7 +25,8 @@ class LifestyleTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-            
+        index = indexPath.row
+
         return cell
     }
         
@@ -41,7 +44,20 @@ class LifestyleTableViewController: UITableViewController {
             
         storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
     }
-}
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails" {
+            if let collectionCell: LifestyleCollectionViewCell = sender as? LifestyleCollectionViewCell{
+                if let collectionView: UICollectionView = collectionCell.superview as? UICollectionView{
+                    if let destinantion = segue.destination as? DetailsViewController{
+                        print("Collection view at row \(collectionView.tag) selected index path \(index)")
+                        destinantion.desc = model[collectionView.tag][collectionCell.tag].description
+                        destinantion.imageName = model[collectionView.tag][collectionCell.tag].imageUrl
+                    }
+                }
+            }
+        }
+    }}
     
 extension LifestyleTableViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -49,15 +65,20 @@ extension LifestyleTableViewController: UICollectionViewDelegate, UICollectionVi
     }
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! LifestyleCollectionViewCell
             
-        cell.backgroundColor = model[collectionView.tag][indexPath.item]
+        cell.imageView.image = UIImage(named: model[collectionView.tag][indexPath.item].imageUrl)
+        
+        cell.tag = indexPath.row
             
         return cell
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
+        //tag = collectionView.tag
+        //index = indexPath.row
+       // print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
     }
 }
 

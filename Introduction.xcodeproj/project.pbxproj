@@ -10,6 +10,11 @@
 		280CE7861EC72EC1009E2FC1 /* LifestyleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CE7851EC72EC1009E2FC1 /* LifestyleTableViewController.swift */; };
 		280CE7881EC7309A009E2FC1 /* LifestyleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CE7871EC7309A009E2FC1 /* LifestyleTableViewCell.swift */; };
 		280CE78A1EC73160009E2FC1 /* LifestyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CE7891EC73160009E2FC1 /* LifestyleModel.swift */; };
+		280CE78F1EC88944009E2FC1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CE78E1EC88944009E2FC1 /* DetailsViewController.swift */; };
+		280CE7911EC88DBC009E2FC1 /* LifestyleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CE7901EC88DBC009E2FC1 /* LifestyleData.swift */; };
+		280CE7931EC8997C009E2FC1 /* LifestyleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CE7921EC8997C009E2FC1 /* LifestyleCollectionViewCell.swift */; };
+		280CE7981EC8F495009E2FC1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CE7971EC8F495009E2FC1 /* MapViewController.swift */; };
+		280CE79A1EC9074C009E2FC1 /* constants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 280CE7991EC9074C009E2FC1 /* constants.plist */; };
 		285490B61EC09CF9002790D1 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285490B41EC09CF9002790D1 /* ProfileTableViewCell.swift */; };
 		285490B71EC09CF9002790D1 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285490B51EC09CF9002790D1 /* ProfileTableViewCell.xib */; };
 		285490BD1EC0C2BD002790D1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285490BC1EC0C2BD002790D1 /* TableViewController.swift */; };
@@ -51,6 +56,11 @@
 		280CE7851EC72EC1009E2FC1 /* LifestyleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleTableViewController.swift; sourceTree = "<group>"; };
 		280CE7871EC7309A009E2FC1 /* LifestyleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleTableViewCell.swift; sourceTree = "<group>"; };
 		280CE7891EC73160009E2FC1 /* LifestyleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleModel.swift; sourceTree = "<group>"; };
+		280CE78E1EC88944009E2FC1 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		280CE7901EC88DBC009E2FC1 /* LifestyleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleData.swift; sourceTree = "<group>"; };
+		280CE7921EC8997C009E2FC1 /* LifestyleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleCollectionViewCell.swift; sourceTree = "<group>"; };
+		280CE7971EC8F495009E2FC1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		280CE7991EC9074C009E2FC1 /* constants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = constants.plist; sourceTree = "<group>"; };
 		285490B41EC09CF9002790D1 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		285490B51EC09CF9002790D1 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		285490BC1EC0C2BD002790D1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -129,12 +139,32 @@
 			name = Walkthrough;
 			sourceTree = "<group>";
 		};
+		280CE78D1EC888FA009E2FC1 /* LifestyleDetails */ = {
+			isa = PBXGroup;
+			children = (
+				280CE78E1EC88944009E2FC1 /* DetailsViewController.swift */,
+			);
+			name = LifestyleDetails;
+			sourceTree = "<group>";
+		};
+		280CE7941EC8F446009E2FC1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				286A45DD1EBF1A5F00DB2039 /* ViewController.swift */,
+				280CE7971EC8F495009E2FC1 /* MapViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		28532DD11EC728C8003D6320 /* LifeStyle */ = {
 			isa = PBXGroup;
 			children = (
+				280CE78D1EC888FA009E2FC1 /* LifestyleDetails */,
 				280CE7851EC72EC1009E2FC1 /* LifestyleTableViewController.swift */,
 				280CE7871EC7309A009E2FC1 /* LifestyleTableViewCell.swift */,
 				280CE7891EC73160009E2FC1 /* LifestyleModel.swift */,
+				280CE7901EC88DBC009E2FC1 /* LifestyleData.swift */,
+				280CE7921EC8997C009E2FC1 /* LifestyleCollectionViewCell.swift */,
 			);
 			name = LifeStyle;
 			sourceTree = "<group>";
@@ -164,16 +194,17 @@
 		286A45DA1EBF1A5F00DB2039 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
+				280CE7941EC8F446009E2FC1 /* Main */,
 				280CE78C1EC76FD0009E2FC1 /* Walkthrough */,
 				280CE78B1EC76FB9009E2FC1 /* Profile */,
 				28532DD11EC728C8003D6320 /* LifeStyle */,
 				286A45DB1EBF1A5F00DB2039 /* AppDelegate.swift */,
-				286A45DD1EBF1A5F00DB2039 /* ViewController.swift */,
 				286A45DF1EBF1A5F00DB2039 /* Main.storyboard */,
 				286A45E21EBF1A5F00DB2039 /* Assets.xcassets */,
 				286A45E41EBF1A5F00DB2039 /* LaunchScreen.storyboard */,
 				286A45E71EBF1A5F00DB2039 /* Info.plist */,
 				285490BE1EC0C3B0002790D1 /* list.plist */,
+				280CE7991EC9074C009E2FC1 /* constants.plist */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
@@ -337,6 +368,7 @@
 			files = (
 				285490BF1EC0C3B0002790D1 /* list.plist in Resources */,
 				286A45E61EBF1A5F00DB2039 /* LaunchScreen.storyboard in Resources */,
+				280CE79A1EC9074C009E2FC1 /* constants.plist in Resources */,
 				285490B71EC09CF9002790D1 /* ProfileTableViewCell.xib in Resources */,
 				286A45E31EBF1A5F00DB2039 /* Assets.xcassets in Resources */,
 				286A45E11EBF1A5F00DB2039 /* Main.storyboard in Resources */,
@@ -505,13 +537,17 @@
 				286A460A1EBF2F9C00DB2039 /* WalkthroughContentViewController.swift in Sources */,
 				280CE7861EC72EC1009E2FC1 /* LifestyleTableViewController.swift in Sources */,
 				280CE7881EC7309A009E2FC1 /* LifestyleTableViewCell.swift in Sources */,
+				280CE78F1EC88944009E2FC1 /* DetailsViewController.swift in Sources */,
 				285490BD1EC0C2BD002790D1 /* TableViewController.swift in Sources */,
+				280CE7911EC88DBC009E2FC1 /* LifestyleData.swift in Sources */,
 				286A45DE1EBF1A5F00DB2039 /* ViewController.swift in Sources */,
 				286A460C1EBF364600DB2039 /* WalkthroughPageViewController.swift in Sources */,
+				280CE7931EC8997C009E2FC1 /* LifestyleCollectionViewCell.swift in Sources */,
 				285490B61EC09CF9002790D1 /* ProfileTableViewCell.swift in Sources */,
 				280CE78A1EC73160009E2FC1 /* LifestyleModel.swift in Sources */,
 				286A460E1EBF36FA00DB2039 /* WalkthroughPage.swift in Sources */,
 				286A45DC1EBF1A5F00DB2039 /* AppDelegate.swift in Sources */,
+				280CE7981EC8F495009E2FC1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
