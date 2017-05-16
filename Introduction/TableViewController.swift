@@ -57,6 +57,17 @@ extension TableViewController:UITableViewDataSource,UITableViewDelegate{
         self.didExpandCell()
     }
     
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath) as! ProfileTableViewCell
+        
+        if isExpanded{
+            cell.expandLabel.text = "Expand"
+            
+        } else {
+            cell.expandLabel.text = "Hide"
+        }
+        self.didExpandCell()    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count
     }

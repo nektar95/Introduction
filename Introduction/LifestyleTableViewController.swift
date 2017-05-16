@@ -45,6 +45,8 @@ class LifestyleTableViewController: UITableViewController {
         storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
     }
     
+   
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails" {
             if let collectionCell: LifestyleCollectionViewCell = sender as? LifestyleCollectionViewCell{
@@ -66,7 +68,7 @@ extension LifestyleTableViewController: UICollectionViewDelegate, UICollectionVi
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! LifestyleCollectionViewCell
-            
+        
         cell.imageView.image = UIImage(named: model[collectionView.tag][indexPath.item].imageUrl)
         
         cell.tag = indexPath.row
@@ -74,6 +76,17 @@ extension LifestyleTableViewController: UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind{
+        case UICollectionElementKindSectionHeader:
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "LifeCollectionHeader", for: indexPath) as! UICollectionReusableView
+            header.backgroundColor = UIColor.blue
+            return header
+        default:
+            assert(false,"Unexpected elemnt kind")
+        }
+        
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //tag = collectionView.tag

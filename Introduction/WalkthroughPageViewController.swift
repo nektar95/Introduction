@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
@@ -29,6 +30,7 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
         
         var index = (viewController as! WalkthroughContentViewController).index
         index -= 1
+        
         
         return contentViewController(at: index)
     }

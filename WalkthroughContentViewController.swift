@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Lottie
 
 class WalkthroughContentViewController: UIViewController {
     
@@ -24,9 +25,37 @@ class WalkthroughContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         headingLabel.text = heading
-        let url = URL(string: imageFile)
-        contentImage.kf.setImage(with: url)
+        
         pageControl.currentPage = index
+        
+        if (index == 0){
+            
+            //    if let animationView = LOTAnimationView(name: "servishero_loading") {
+            if let animationView = LOTAnimationView(contentsOf: URL(string: "https://www.lottiefiles.com/storage/datafiles/kQ7MsmdpbKAsehi/data.json")!) {
+                animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+                animationView.center = self.view.center
+                
+                animationView.loopAnimation = true
+                animationView.contentMode = .scaleAspectFill
+                animationView.animationSpeed = 0.5
+                
+                // Applying UIView animation
+                let minimizeTransform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+                animationView.transform = minimizeTransform
+                UIView.animate(withDuration: 3.0, delay: 0.0, options: [.repeat, .autoreverse], animations: {
+                    animationView.transform = CGAffineTransform.identity
+                }, completion: nil)
+                
+                view.addSubview(animationView)
+                
+                view.backgroundColor = UIColor.white
+                
+                animationView.play()
+            }
+        } else{
+            let url = URL(string: imageFile)
+            contentImage.kf.setImage(with: url)
+        }
         
         switch index {
         case 0...1: forwardButton.setTitle("NEXT", for: .normal)
