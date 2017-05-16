@@ -208,20 +208,20 @@
                                 <rect key="frame" x="310" y="616" width="40" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="nextButtonTappedWithSender:" destination="XLp-5p-8FT" eventType="touchDown" id="RwI-Re-14r"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwc-nM-yDA">
-                                <rect key="frame" x="163" y="459" width="49" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwc-nM-yDA">
+                                <rect key="frame" x="163" y="536" width="49" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.78485785590277779" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KpU-V2-pas" firstAttribute="top" secondItem="LX0-8X-cJg" secondAttribute="bottom" constant="10" id="11L-zZ-zhG"/>
                             <constraint firstItem="KpU-V2-pas" firstAttribute="top" secondItem="8Et-WF-mhd" secondAttribute="bottom" constant="16" id="18R-XY-ckt"/>
@@ -229,14 +229,14 @@
                             <constraint firstItem="LX0-8X-cJg" firstAttribute="centerX" secondItem="gbk-PN-DO5" secondAttribute="centerX" id="BE0-nv-h6T"/>
                             <constraint firstItem="8Et-WF-mhd" firstAttribute="trailing" secondItem="gbk-PN-DO5" secondAttribute="trailingMargin" id="C46-xs-GNz"/>
                             <constraint firstAttribute="trailing" secondItem="8Et-WF-mhd" secondAttribute="trailing" constant="25" id="D8O-C1-ilL"/>
+                            <constraint firstItem="Xwc-nM-yDA" firstAttribute="centerX" secondItem="gbk-PN-DO5" secondAttribute="centerX" id="Jma-6D-D43"/>
                             <constraint firstItem="DB8-gx-lQm" firstAttribute="centerX" secondItem="gbk-PN-DO5" secondAttribute="centerX" id="MKq-cg-tsq"/>
                             <constraint firstItem="KpU-V2-pas" firstAttribute="top" secondItem="8Et-WF-mhd" secondAttribute="bottom" constant="16" id="OnW-TW-e1z"/>
                             <constraint firstItem="DB8-gx-lQm" firstAttribute="leading" secondItem="gbk-PN-DO5" secondAttribute="leadingMargin" constant="10" id="QT1-n2-jSX"/>
                             <constraint firstItem="KpU-V2-pas" firstAttribute="top" secondItem="8Et-WF-mhd" secondAttribute="bottom" constant="16" id="U6c-j8-kTF"/>
                             <constraint firstItem="DB8-gx-lQm" firstAttribute="top" secondItem="Lno-Wh-qhU" secondAttribute="bottom" constant="20" id="Xcp-E0-5ck"/>
-                            <constraint firstItem="Xwc-nM-yDA" firstAttribute="centerX" secondItem="gbk-PN-DO5" secondAttribute="centerX" id="YzP-j9-Zrd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DB8-gx-lQm" secondAttribute="trailing" constant="10" id="akz-B1-lm4"/>
-                            <constraint firstItem="Xwc-nM-yDA" firstAttribute="top" secondItem="DB8-gx-lQm" secondAttribute="bottom" constant="20" id="rLk-Tm-lp6"/>
+                            <constraint firstItem="LX0-8X-cJg" firstAttribute="top" secondItem="Xwc-nM-yDA" secondAttribute="bottom" constant="36" id="qoU-W7-SqM"/>
                             <constraint firstItem="8Et-WF-mhd" firstAttribute="trailing" secondItem="gbk-PN-DO5" secondAttribute="trailingMargin" constant="16" id="v3j-BM-bfd"/>
                         </constraints>
                     </view>
@@ -405,6 +405,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="7Ce-s3-VH4" kind="relationship" relationship="viewControllers" id="LPq-yw-V3Q"/>
                         <segue destination="eNW-oR-1xf" kind="relationship" relationship="viewControllers" id="26w-fm-czm"/>

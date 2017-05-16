@@ -13,8 +13,8 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
 
     var pages:[WalkthroughPage] = [
         WalkthroughPage(heading: "Hi!",imageUrl: "https://i.imgur.com/NSSvURz.jpg"),
-        WalkthroughPage(heading: "O!",imageUrl: "https://i.imgur.com/NSSvURz.jpg"),
-        WalkthroughPage(heading: "Let's start!",imageUrl: "https://i.imgur.com/NSSvURz.jpg")]
+        WalkthroughPage(heading: "I's simple portfolio app",imageUrl: "https://raw.githubusercontent.com/nektar95/Introduction/master/Introduction/Assets.xcassets/lottie/outline_user.dataset/outline_user.json"),
+        WalkthroughPage(heading: "Let's start!",imageUrl: "https://raw.githubusercontent.com/nektar95/Introduction/master/Introduction/Assets.xcassets/lottie/colorline.dataset/colorline.json")]
     
     override func viewDidLoad() {
         super.viewDidLoad()

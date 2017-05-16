@@ -28,11 +28,11 @@ class WalkthroughContentViewController: UIViewController {
         
         pageControl.currentPage = index
         
-        if (index == 0){
-            
-            //    if let animationView = LOTAnimationView(name: "servishero_loading") {
-            if let animationView = LOTAnimationView(contentsOf: URL(string: "https://www.lottiefiles.com/storage/datafiles/kQ7MsmdpbKAsehi/data.json")!) {
-                animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+        switch index {
+        case 0:
+            forwardButton.setTitle("NEXT", for: .normal)
+            if let animationView = LOTAnimationView(contentsOf: URL(string: imageFile)!) {
+                animationView.frame = CGRect(x: 0, y: 0, width: 275, height: 275)
                 animationView.center = self.view.center
                 
                 animationView.loopAnimation = true
@@ -46,20 +46,26 @@ class WalkthroughContentViewController: UIViewController {
                     animationView.transform = CGAffineTransform.identity
                 }, completion: nil)
                 
+                //view.backgroundColor = UIColor.white
                 view.addSubview(animationView)
-                
-                view.backgroundColor = UIColor.white
                 
                 animationView.play()
             }
-        } else{
+        case 1:
+            forwardButton.setTitle("NEXT", for: .normal)
             let url = URL(string: imageFile)
             contentImage.kf.setImage(with: url)
-        }
-        
-        switch index {
-        case 0...1: forwardButton.setTitle("NEXT", for: .normal)
-        case 2: forwardButton.setTitle("DONE", for: .normal)
+        case 2:
+            if let animationView = LOTAnimationView(name: "servishero_loading") {
+                animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+                animationView.center = self.view.center
+                animationView.contentMode = .scaleAspectFill
+                
+                view.addSubview(animationView)
+                
+                animationView.play()
+            }
+            forwardButton.setTitle("DONE", for: .normal)
         default: break
         }
 
