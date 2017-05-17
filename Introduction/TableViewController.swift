@@ -13,6 +13,8 @@ class TableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var items = [[String:String]]()
+    var expandRows = Set<Int>()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +36,8 @@ class TableViewController: UIViewController {
     }
     
     var selectedIndex:IndexPath?
-    var isExpanded = false
     
-    func didExpandCell(){
-        self.isExpanded = !isExpanded
-        
+    func reloadRows(){
         self.tableView.reloadRows(at: [selectedIndex!], with: .automatic)
     }
 }
@@ -46,27 +45,17 @@ extension TableViewController:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedIndex = indexPath
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath) as! ProfileTableViewCell
 
-        if isExpanded{
-            cell.expandLabel.text = "Expand"
+
+        if expandRows.contains(indexPath.row){
+            self.expandRows.remove(indexPath.row)
             
         } else {
-            cell.expandLabel.text = "Hide"
+            self.expandRows.insert(indexPath.row)
         }
-        self.didExpandCell()
+
+        self.reloadRows()
     }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath) as! ProfileTableViewCell
-        
-        if isExpanded{
-            cell.expandLabel.text = "Expand"
-            
-        } else {
-            cell.expandLabel.text = "Hide"
-        }
-        self.didExpandCell()    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count
@@ -80,12 +69,15 @@ extension TableViewController:UITableViewDataSource,UITableViewDelegate{
         cell.titleLabel.text = item["title"]
         cell.descriptionLabel.text = item["description"]
         cell.thumbImage.image = UIImage.init(named: item["image"]!)
+        cell.expandLabel.text = "Expand"
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if isExpanded && self.selectedIndex == indexPath{
+        if expandRows.contains(indexPath.row) && selectedIndex==indexPath{
+            self.expandRows.removeAll()
+            self.expandRows.insert(indexPath.row)
             return 160
         }
         return 90

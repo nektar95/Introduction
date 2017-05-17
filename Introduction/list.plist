@@ -18,5 +18,61 @@
 		<key>image</key>
 		<string>ic_school</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Studia</string>
+		<key>description</key>
+		<string>Poznan University of Technology</string>
+		<key>image</key>
+		<string>ic_school</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Studia</string>
+		<key>description</key>
+		<string>Poznan University of Technology</string>
+		<key>image</key>
+		<string>ic_school</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Studia</string>
+		<key>description</key>
+		<string>Poznan University of Technology</string>
+		<key>image</key>
+		<string>ic_school</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Studia</string>
+		<key>description</key>
+		<string>Poznan University of Technology</string>
+		<key>image</key>
+		<string>ic_school</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Studia</string>
+		<key>description</key>
+		<string>Poznan University of Technology</string>
+		<key>image</key>
+		<string>ic_school</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Studia</string>
+		<key>description</key>
+		<string>Poznan University of Technology</string>
+		<key>image</key>
+		<string>ic_school</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Studia</string>
+		<key>description</key>
+		<string>Poznan University of Technology</string>
+		<key>image</key>
+		<string>ic_school</string>
+	</dict>
 </array>
 </plist>

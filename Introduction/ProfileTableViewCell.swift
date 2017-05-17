@@ -14,6 +14,9 @@ class ProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var expandLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    var isExpanded = false
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
