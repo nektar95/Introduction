@@ -46,7 +46,6 @@ extension TableViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedIndex = indexPath
 
-
         if expandRows.contains(indexPath.row){
             self.expandRows.remove(indexPath.row)
             
@@ -70,6 +69,7 @@ extension TableViewController:UITableViewDataSource,UITableViewDelegate{
         cell.descriptionLabel.text = item["description"]
         cell.thumbImage.image = UIImage.init(named: item["image"]!)
         cell.expandLabel.text = "Hide"
+        
         
         return cell
     }

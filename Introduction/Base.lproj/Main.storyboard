@@ -387,7 +387,7 @@
                                 <rect key="frame" x="0.0" y="41" width="320" height="240"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijS-xE-73F">
-                                <rect key="frame" x="16" y="381" width="288" height="23"/>
+                                <rect key="frame" x="16" y="421" width="288" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -395,11 +395,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ijS-xE-73F" firstAttribute="top" secondItem="gfZ-gB-hS7" secondAttribute="bottom" constant="100" id="7Q9-bB-oPi"/>
                             <constraint firstItem="ijS-xE-73F" firstAttribute="leading" secondItem="FQV-om-ygi" secondAttribute="leadingMargin" id="A21-VI-HUk"/>
                             <constraint firstItem="b41-Lg-26r" firstAttribute="top" secondItem="gfZ-gB-hS7" secondAttribute="bottom" constant="238" id="Beo-qh-pdb"/>
                             <constraint firstItem="gfZ-gB-hS7" firstAttribute="top" secondItem="FQV-om-ygi" secondAttribute="top" constant="41" id="Zkq-KH-DHy"/>
                             <constraint firstItem="gfZ-gB-hS7" firstAttribute="leading" secondItem="FQV-om-ygi" secondAttribute="leading" id="ifP-p0-Egp"/>
+                            <constraint firstItem="b41-Lg-26r" firstAttribute="top" secondItem="ijS-xE-73F" secondAttribute="bottom" constant="75" id="kgY-oj-Xzb"/>
                             <constraint firstAttribute="trailing" secondItem="gfZ-gB-hS7" secondAttribute="trailing" id="zgy-gV-YiT"/>
                             <constraint firstItem="ijS-xE-73F" firstAttribute="trailing" secondItem="FQV-om-ygi" secondAttribute="trailingMargin" id="zi6-RJ-2tz"/>
                         </constraints>

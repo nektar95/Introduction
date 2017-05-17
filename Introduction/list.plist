@@ -22,7 +22,7 @@
 		<key>title</key>
 		<string>Programming skills</string>
 		<key>description</key>
-		<string>Java, Android SDK, Android Studio at advanced level \n C/C++, PHP, SQL at good level</string>
+		<string>Java, Android SDK, Android Studio at advanced level C/C++, PHP, SQL at good level</string>
 		<key>image</key>
 		<string>ic_assignment</string>
 	</dict>
@@ -78,7 +78,7 @@
 		<key>title</key>
 		<string>Certificates</string>
 		<key>description</key>
-		<string>• CISCO IT Essentials \n • CompTIA A+ • CISCO CCNA Exploration</string>
+		<string>CISCO IT Essentials, CompTIA A+, CISCO CCNA Exploration</string>
 		<key>image</key>
 		<string>ic_book</string>
 	</dict>
@@ -86,7 +86,7 @@
 		<key>title</key>
 		<string>Certificates</string>
 		<key>description</key>
-		<string>• Techland Akademia Tworcow Gier &quot;Level Design&quot;</string>
+		<string>Techland Akademia Tworcow Gier &quot;Level Design&quot;</string>
 		<key>image</key>
 		<string>ic_book</string>
 	</dict>

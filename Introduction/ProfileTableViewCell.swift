@@ -20,6 +20,22 @@ class ProfileTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    
+            let tap = UITapGestureRecognizer(target: self, action: #selector(ProfileTableViewCell.tapFunction))
+            descriptionLabel.isUserInteractionEnabled = true
+            descriptionLabel.addGestureRecognizer(tap)
+        
+    }
+    
+    func tapFunction(sender:UITapGestureRecognizer) {
+        if titleLabel.text == "Github" {
+            let settingsUrl = NSURL(string:"https://github.com/nektar95")! as URL
+            UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
+        }
+        if titleLabel.text == "Enduhub" {
+            let settingsUrl = NSURL(string:"https://enduhub.com/en/")! as URL
+            UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
