@@ -27,26 +27,25 @@ class WalkthroughContentViewController: UIViewController {
         headingLabel.text = heading
         
         pageControl.currentPage = index
+        let screenWidth = UIScreen.main.bounds.width
         
         switch index {
         case 0:
             forwardButton.setTitle("NEXT", for: .normal)
             if let animationView = LOTAnimationView(contentsOf: URL(string: imageFile)!) {
-                animationView.frame = CGRect(x: 0, y: 0, width: 275, height: 275)
+                animationView.frame = CGRect(x: 0, y: 0, width: screenWidth*0.75, height: screenWidth*0.75)
                 animationView.center = self.view.center
                 
                 animationView.loopAnimation = true
                 animationView.contentMode = .scaleAspectFill
                 animationView.animationSpeed = 0.5
                 
-                // Applying UIView animation
                 let minimizeTransform = CGAffineTransform(scaleX: 0.1, y: 0.1)
                 animationView.transform = minimizeTransform
                 UIView.animate(withDuration: 3.0, delay: 0.0, options: [.repeat, .autoreverse], animations: {
                     animationView.transform = CGAffineTransform.identity
                 }, completion: nil)
                 
-                //view.backgroundColor = UIColor.white
                 view.addSubview(animationView)
                 
                 animationView.play()
@@ -56,14 +55,26 @@ class WalkthroughContentViewController: UIViewController {
             let url = URL(string: imageFile)
             contentImage.kf.setImage(with: url)
         case 2:
-            if let animationView = LOTAnimationView(name: "servishero_loading") {
-                animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+            if let animationView = LOTAnimationView(contentsOf: URL(string: imageFile)!) {
+                animationView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenWidth)
                 animationView.center = self.view.center
+                animationView.loopAnimation = true
+                animationView.animationSpeed = 0.5
                 animationView.contentMode = .scaleAspectFill
                 
                 view.addSubview(animationView)
                 
                 animationView.play()
+            }
+            if let animationView1 = LOTAnimationView(contentsOf: URL(string: imageFile)!) {
+                animationView1.frame = CGRect(x: 0, y: 0, width: 200, height: 250)
+                animationView1.center = self.view.center
+                animationView1.loopAnimation = true
+                animationView1.contentMode = .scaleAspectFill
+                
+                view.addSubview(animationView1)
+                
+                animationView1.play()
             }
             forwardButton.setTitle("DONE", for: .normal)
         default: break

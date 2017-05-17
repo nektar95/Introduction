@@ -12,8 +12,8 @@ import Lottie
 class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
     var pages:[WalkthroughPage] = [
-        WalkthroughPage(heading: "Hi!",imageUrl: "https://i.imgur.com/NSSvURz.jpg"),
-        WalkthroughPage(heading: "I's simple portfolio app",imageUrl: "https://raw.githubusercontent.com/nektar95/Introduction/master/Introduction/Assets.xcassets/lottie/outline_user.dataset/outline_user.json"),
+        WalkthroughPage(heading: "Hi!",imageUrl: "https://raw.githubusercontent.com/nektar95/Introduction/master/Introduction/Assets.xcassets/lottie/outline_user.dataset/outline_user.json"),
+        WalkthroughPage(heading: "It's simple portfolio app",imageUrl: "https://raw.githubusercontent.com/nektar95/Introduction/master/Introduction/Assets.xcassets/Simulator%20Screen%20Shot%20May%2016%2C%202017%2C%2011.56.44%20AM_iphone6splussilver_portrait.png"),
         WalkthroughPage(heading: "Let's start!",imageUrl: "https://raw.githubusercontent.com/nektar95/Introduction/master/Introduction/Assets.xcassets/lottie/colorline.dataset/colorline.json")]
     
     override func viewDidLoad() {
