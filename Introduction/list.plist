@@ -4,75 +4,99 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>Szkola srednia</string>
+		<string>Middle school</string>
 		<key>description</key>
-		<string>Zespol Szkol Kompromitacji</string>
+		<string>Zespol Szkol Komunikacji IT technician with specialisation in databases</string>
 		<key>image</key>
 		<string>ic_school</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Studia</string>
+		<string>Studies</string>
 		<key>description</key>
-		<string>Poznan University of Technology</string>
+		<string>Poznan University of Technology Computer Science on Faculty of Computing II year of full-time studies</string>
 		<key>image</key>
 		<string>ic_school</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Studia</string>
+		<string>Programming skills</string>
 		<key>description</key>
-		<string>Poznan University of Technology</string>
+		<string>Java, Android SDK, Android Studio at advanced level \n C/C++, PHP, SQL at good level</string>
 		<key>image</key>
-		<string>ic_school</string>
+		<string>ic_assignment</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Studia</string>
+		<string>Programming skills</string>
 		<key>description</key>
-		<string>Poznan University of Technology</string>
+		<string>Knowledge of Python, Xcode, iOS SDK, Git, QT, Unity3D and design patterns</string>
 		<key>image</key>
-		<string>ic_school</string>
+		<string>ic_assignment</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Studia</string>
+		<string>Experience/projects</string>
 		<key>description</key>
-		<string>Poznan University of Technology</string>
+		<string>Android application for saving debts with usage of Firebase to authorize users and storage data</string>
 		<key>image</key>
-		<string>ic_school</string>
+		<string>ic_card_travel</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Studia</string>
+		<string>Experience/projects</string>
 		<key>description</key>
-		<string>Poznan University of Technology</string>
+		<string>Academic project in Java to simulate restaraunt work cycle with orders delivery, using threads</string>
 		<key>image</key>
-		<string>ic_school</string>
+		<string>ic_card_travel</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Studia</string>
+		<string>Experience/projects</string>
 		<key>description</key>
-		<string>Poznan University of Technology</string>
+		<string>Others academic projects on Github and minor projects on Android e.g searching photos on Flickr or displaying photos from nearest location</string>
 		<key>image</key>
-		<string>ic_school</string>
+		<string>ic_card_travel</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Studia</string>
+		<string>Github</string>
 		<key>description</key>
-		<string>Poznan University of Technology</string>
+		<string>github.com/nektar95</string>
 		<key>image</key>
-		<string>ic_school</string>
+		<string>ic_card_travel</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Studia</string>
+		<string>Enduhub</string>
 		<key>description</key>
-		<string>Poznan University of Technology</string>
+		<string>Application for searching results within diffren sports events, managing your profile or notifying about new results</string>
 		<key>image</key>
-		<string>ic_school</string>
+		<string>logo</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Certificates</string>
+		<key>description</key>
+		<string>• CISCO IT Essentials \n • CompTIA A+ • CISCO CCNA Exploration</string>
+		<key>image</key>
+		<string>ic_book</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Certificates</string>
+		<key>description</key>
+		<string>• Techland Akademia Tworcow Gier &quot;Level Design&quot;</string>
+		<key>image</key>
+		<string>ic_book</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Languages</string>
+		<key>description</key>
+		<string>English - level B2 and easy of understanding technical documentation</string>
+		<key>image</key>
+		<string>ic_textsms</string>
 	</dict>
 </array>
 </plist>

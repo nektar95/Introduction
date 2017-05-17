@@ -79,7 +79,7 @@ extension LifestyleTableViewController: UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind{
         case UICollectionElementKindSectionHeader:
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "LifeCollectionHeader", for: indexPath) as! UICollectionReusableView
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "LifeCollectionHeader", for: indexPath) 
             header.backgroundColor = UIColor.blue
             return header
         default:

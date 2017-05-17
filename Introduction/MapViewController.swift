@@ -39,6 +39,32 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             }
             
         })
+        mapView.delegate = self
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let identifier = "MyPin"
+        
+        if annotation.isKind(of: MKUserLocation.self) {
+            return nil
+        }
+        
+        var annotationView:MKPinAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
+        
+        if annotationView == nil {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView?.canShowCallout = true
+        }
+        
+        let leftIconView = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 53, height: 53))
+        let homeImage = "ic_home"
+        
+        leftIconView.image = UIImage(named: homeImage)
+        
+        annotationView?.leftCalloutAccessoryView = leftIconView
+        annotationView?.pinTintColor = UIColor.blue
+        
+        return annotationView
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,3 +78,4 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         self.tabBarController?.tabBar.isHidden = false
     }
 }
+

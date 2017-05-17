@@ -24,7 +24,7 @@ class TableViewController: UIViewController {
         
         self.items = loadPlist()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -69,7 +69,7 @@ extension TableViewController:UITableViewDataSource,UITableViewDelegate{
         cell.titleLabel.text = item["title"]
         cell.descriptionLabel.text = item["description"]
         cell.thumbImage.image = UIImage.init(named: item["image"]!)
-        cell.expandLabel.text = "Expand"
+        cell.expandLabel.text = "Hide"
         
         return cell
     }
@@ -78,9 +78,11 @@ extension TableViewController:UITableViewDataSource,UITableViewDelegate{
         if expandRows.contains(indexPath.row) && selectedIndex==indexPath{
             self.expandRows.removeAll()
             self.expandRows.insert(indexPath.row)
-            return 160
+            return 180
         }
-        return 90
+        return 70
     }
+    
+    
     
 }
