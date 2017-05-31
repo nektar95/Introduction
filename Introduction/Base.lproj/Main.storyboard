@@ -309,8 +309,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0I-lj-VwF">
+                                            <rect key="frame" x="23" y="16" width="102" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A0l-Bb-qsX">
-                                            <rect key="frame" x="0.0" y="-28" width="320" height="201"/>
+                                            <rect key="frame" x="0.0" y="40" width="320" height="133"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YZz-fs-rWO">
                                                 <size key="itemSize" width="140" height="140"/>
@@ -320,7 +326,7 @@
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="u00-Ay-eZf" customClass="LifestyleCollectionViewCell" customModule="Introduction" customModuleProvider="target">
-                                                    <rect key="frame" x="10" y="31" width="140" height="140"/>
+                                                    <rect key="frame" x="10" y="-4" width="140" height="140"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                         <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
@@ -350,13 +356,18 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="A0l-Bb-qsX" secondAttribute="trailing" id="6Kt-qA-Sjf"/>
+                                        <constraint firstItem="A0l-Bb-qsX" firstAttribute="top" secondItem="Z0I-lj-VwF" secondAttribute="bottom" constant="4" id="7pP-ed-l0m"/>
+                                        <constraint firstItem="Z0I-lj-VwF" firstAttribute="leading" secondItem="N3O-Kk-tKa" secondAttribute="leadingMargin" constant="15" id="DUe-oz-aPj"/>
+                                        <constraint firstItem="A0l-Bb-qsX" firstAttribute="top" secondItem="N3O-Kk-tKa" secondAttribute="top" constant="40" id="Jxb-5X-pk0"/>
                                         <constraint firstItem="A0l-Bb-qsX" firstAttribute="leading" secondItem="N3O-Kk-tKa" secondAttribute="leading" id="MvP-uK-Wgi"/>
+                                        <constraint firstItem="Z0I-lj-VwF" firstAttribute="top" secondItem="N3O-Kk-tKa" secondAttribute="topMargin" constant="8" id="lvc-5K-AVd"/>
                                         <constraint firstItem="A0l-Bb-qsX" firstAttribute="top" secondItem="N3O-Kk-tKa" secondAttribute="topMargin" constant="-36" id="pLI-af-N97"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="A0l-Bb-qsX" secondAttribute="bottom" constant="-21.5" id="qWe-tA-jc0"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="collectionView" destination="A0l-Bb-qsX" id="Hwp-ry-gBV"/>
+                                    <outlet property="headerLabel" destination="Z0I-lj-VwF" id="wM5-8b-aEv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
