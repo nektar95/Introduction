@@ -66,7 +66,6 @@
                     <constraint firstItem="9Et-Vi-Rr4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="lUb-Fq-9lg"/>
                     <constraint firstItem="Lo4-DH-ktM" firstAttribute="leading" secondItem="0MY-Go-Ij4" secondAttribute="trailing" constant="35" id="q8h-2o-NcO"/>
                     <constraint firstAttribute="bottomMargin" secondItem="9Et-Vi-Rr4" secondAttribute="bottom" constant="8" id="xP6-AE-zF2"/>
-                    <constraint firstItem="9Et-Vi-Rr4" firstAttribute="top" secondItem="3xf-F8-s4Z" secondAttribute="bottom" constant="16" id="zQ6-ji-bUF"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
